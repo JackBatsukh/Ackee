@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #282d2d;
+    overflow-x: hidden;
+
+}
+.content{
+    /* position: relative; */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: o auto;
+}
+.header{
+    width: 100%;
+    max-width: 1400px;
+    padding: 2.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+    justify-content: space-between;
+}
+.header .logo{
+   display: grid;
+   align-items: center;
+   grid-auto-flow: column;
+   gap: 1rem; 
+}
+.header .logo .logoIcon{
+    width: 46px;
+    height: 46px;
+    background: linear-gradient(15deg, #73fac8,#00bee1);
+    border-radius: 50%;
+}
+
+p{
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.header .menu i{
+    font-size: 1.5rem;
+    color:#fff ;
+    position: relative;
+    z-index: 999;
+}
+.header .menu .sideBar_menu{
+    width: 400px;
+    position: absolute;
+    /* right: -500px; */
+    right: -700px;
+    background-color:#00bee1 ;
+    height: 100vh;
+    top:0;
+}
+
+.header .menu #check:checked ~ .sideBar_menu{
+    right: 0;
+    transition: 1s;
+}
+.header .menu #check:not(:checked) ~ .sideBar_menu{
+    right: -700px;
+    transition: 1s;
+}
+#check{
+    display: none;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px;
+}
+.container1 .child1 h1{
+    color: white;
+    font-size: 54.6px;
+    margin-bottom: 80px;
+}
+.container1 .txt p{
+    font-size: 24.15px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.container1 .btn button{
+    background: radial-gradient(farthest-corner at var(--x,0) var(--y,0),#6b89d4,#043352);
+    padding: 10px;
+    width: 300px;
+    font-size: 21px;
+    border-radius: 100px;
+    border: 3px rgb(87, 216, 245) solid;
+}
+.container1 .bosoo{
+    margin: 20px;
+    width: 1px;
+    height: 50px;
+    font-size: 21px;
+    background-color: hsla(0,0%,100%,.3);
+}
+.container1 .or .bottom{
+    border-bottom: 2px #79e3f6 solid;
+}
+.mac{
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -300px;
+    padding-top: -100px;
+    /* left: 200px; */
+}
+.mac .zurag{
+    /* position: relative; */
+
+}
+.mac .zurag .overlay{
+    width: 1068px;
+    height: 936px;
+    right: 150px;
+    top: auto;
+    z-index: 99;
+    position: absolute;
+    border: 1px black solid;
+}
+.mac .zurag .background1{
+    position: absolute;
+    top: 350px;
+    right: 0;
+    z-index: 1;
+    width: 470px;
+    height: 337px;
+}
+.mac .zurag .background2{
+    position: absolute;
+    top: 600px;
+    left: 80px;
+    width: 325px;
+    height: 460px;
+}
+.mac .zurag .background3{
+    position: absolute;
+    right: 0;
+    width: 646px;
+    height: 500px;
+    top: 1000px;
+    right: 100px;
+}
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 80px; */
+    width: 100%;
+    height: 30vh;
+    margin-top: 600px;
+}
+.dashboard .group{
+    width: 1068px;
+    display: flex;
+    justify-content: space-between;
+}
+.group h1{
+    color: white;
+    padding-bottom: 24px;
+}
+.features{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    justify-content: start;
+    margin: -100px 168px 0;
+    padding: 24px 0 24px 0;
+}
+.features .feat{
+    color: #73fac8;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .05em;
+    border-radius: 100px;
+    background: rgba(115,250,200,.15);
+    padding: .3333333333rem .6666666667rem;
+    width: fit-content;
+}
+.features h1{
+    font-family: Carter One,sans-serif;
+    color: white;
+    line-height: 1.3;
+    font-size: 50px;
+}
+.features p{
+    margin-top: 30px;
+    font-size: 24px;
+    color: hsla(0,0%,100%,.6);
+}
+.Data {
+    width: 100%;
+    margin-left: 170px;
+    margin-bottom: 50px;
+}
+.Data .group{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 200px;
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+
+}
+.Data img{
+    width: 46px;
+    height: 46px;
+}
+.Data h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+.Data p{
+    color: hsla(0,0%,100%,.6);
+}
+.Data .scr .zurag{
+    width: 380px;
+    height: 205px;
+}
+.Data .group .eye{
+    grid-area: 1/1/2/2;
+}
+.Data .group .finger{
+    grid-area: 1/2/2/3;
+}
+.Data .group .burger{
+    grid-area: 1/3/2/4;
+}
+.Data .group .scr {
+    display: flex;
+    flex-direction: row;
+    grid-area: 2/1/3/3;
+    gap: 20px;
+    background-color: rgba(0, 190, 225, 0.15);
+    padding-right: 100px;
+    width: 700px;
+    border-radius: 10px;
+}
+.Data .group .scr .zurag img{
+    padding-top: 17px;
+    /* padding-left: 30px; */
+    /* background-color: #00bee1; */
+    /* height: 100px; */
+}
+.Data .group .scr .hub h1{
+    width: 300px;
+}
+.Data .group .burger1{
+    grid-area: 2/3/3/4;
+}
+.zuraas{
+    width: 2500px;
+    color: rgb(1, 0, 0);
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+}
+.beautiful{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid black;
+    position: relative;
+
+}
+.beautiful .content{
+    width: 1190px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+.beautiful .content .left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+.beautiful .content .left .higher{
+    display: flex;
+    flex-direction: column;
+
+}
+.beautiful .content .left .higher .tag{
+    width: 120px;
+    height: 40px;
+    color: #73FAC8;
+    background-color: #334B44;
+    font-family: "Rubik", sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 50px;
+}
+.beautiful .content .left .higher .title{
+    font-family: "Carter One", system-ui;
+    font-size: 45px;
+    color: white;
+}
+.beautiful .content .left .lower .text{
+    font-size: 20px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+.beautiful .content .right{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.beautiful .content .right .tab{
+    width: 100%;
+    height: 423px;
+    padding: 33.6px 31.5px 31.5px;
+    background-color: #333838;
+    border-radius: 10px;
+}
+.beautiful .content .right .tab .higher .name{
+    font-size: 27px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+
+}
+.beautiful .content .right .tab .higher .date{
+    font-size: 18px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+.beautiful .background{
+    width: 520px;
+    height: 457px;
+    background: linear-gradient(135deg,#73fac8,#00bee1);
+    position: absolute;
+    z-index: 1;
+    right: 50px;
+    top: 50px;
+    border-radius: 10px;
+}
+.beautiful .leaf img{
+    width: 400px;
+    height: 290px;
+    position: absolute;
+    z-index: 2;
+    right: 100px;
+    top: -100px;
+}
+.code{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+
+}
+.code .content{
+    width: 1190px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.code .content .left img{
+    width: 500px;
+    height: 500px;
+}
+.code .content .right{
+    width: 542px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.code .content .right .higher .tag{
+    width: 130px;
+    height: 40px;
+    color: #73FAC8;
+    background-color: #334B44;
+    font-family: "Rubik", sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 50px;
+}
+.code .content .right .higher .title{
+    font-family: "Carter One", system-ui;
+    font-size: 45px;
+    color: white;
+}
+.code .content .right .lower{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.code .content .right .lower .text1{
+    font-size: 20px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+.code .content .right .lower .text2{
+    font-size: 20px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+.install{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.install .content{
+    width: 1190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.install .content .left{
+    display: flex;
+    flex-direction: column;
+
+}
+.install .content .left .title{
+    font-family: "Carter One", system-ui;
+    font-size: 45px;
+    color: white;
+}
+.install .content .left .text{
+    font-size: 20px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+.install .content .right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.install .content .right button{
+    width: 542px;
+    height: 109px;
+    background-color: #2F3434;
+    padding: 33.6px 31.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #2F3434;
+    border-radius: 10px;
+}
+.install .content .right button .number{
+    width: 36px;
+    height: 36px;
+    background-color: #243C3F;
+    color: white;
+    border: 2px solid #00BEE1;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.install .content .right button .text{
+    color: white;
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+
+}
+.install .content .right button:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+}
+.footer {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer .content{
+    width: 1190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer .content .left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.footer .content .left .text{
+    font-size: 20px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+.footer .content .left img{
+    width: 16px;
+    height: 14px;
+
+}
+.footer .content .right{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.footer .content .right .text{
+    font-size: 18px;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
